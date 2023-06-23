@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/potrait_background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="352dp"
+        android:layout_height="81dp"
+        android:fontFamily="@font/fonta"
+        android:text="Innocent Bird"
+        android:textAllCaps="true"
+        android:textColor="#FFEB3B"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/bird1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        tools:ignore="UnknownId" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="startGame"
+        app:srcCompat="@drawable/playbuttons"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/rateBtn"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_gradient_style"
+        android:fontFamily="@font/fonta"
+        android:text="RATE"
+        android:textColor="#E3C0C0"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rateBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_gradient_style"
+        android:fontFamily="@font/fonta"
+        android:text="EXIT"
+        android:textColor="#DF3B3B"
+        android:textSize="50sp" />
+</RelativeLayout>

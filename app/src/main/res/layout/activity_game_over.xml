@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOver"
+    android:background="@drawable/potrait_background">
+    <LinearLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="90dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/BestDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/fonta"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BEST"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/fonta"/>
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/scoreDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/fonta"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCORE"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/fonta"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        tools:ignore="DuplicateIds"
+        android:layout_below="@+id/relative_1">
+        <TextView
+            android:id="@+id/gameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAME OVER"
+            android:textSize="50sp"
+            android:fontFamily="@font/fonta"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorYellow"
+            tools:ignore="InvalidId" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="195dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/gameOver"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_gradient_style"
+            android:fontFamily="@font/fonta"
+            android:text="RESTART"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="195dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/btnRestart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_gradient_style"
+            android:fontFamily="@font/fonta"
+            android:text="MORE::"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
