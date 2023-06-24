@@ -69,7 +69,7 @@ public class GameManager {
         {
 
             if((tubeCollections.get(winningTube).getXtube() < bird.getX() + AppHolder.getBitmapControl().getBirdWidth())
-             && (tubeCollections.get(winningTube).getUpTube_Y() > bird.getY()
+             && (tubeCollections.get(winningTube).getUpTubeCollection_Y() > bird.getY()
             || tubeCollections.get(winningTube).getDownTube_Y() < (bird.getY() +
                     AppHolder.getBitmapControl().getBirdHeight()))) {
                 gameState=2;
